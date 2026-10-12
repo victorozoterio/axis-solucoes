@@ -1,0 +1,36 @@
+.contact {
+  padding: 66px 0;
+  background: var(--blue);
+  color: #fff;
+}
+.contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.contact h2 {
+  color: #fff;
+  font-size: clamp(38px, 4vw, 54px);
+}
+.contact p:not(.eyebrow) {
+  max-width: 500px;
+  margin: 20px 0 0;
+  color: #d8e5ff;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.contact-button {
+  min-width: 205px;
+}
+@media (max-width: 800px) {
+  .contact-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 520px) {
+  .contact-button {
+    width: 100%;
+  }
+}
