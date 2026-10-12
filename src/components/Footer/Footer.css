@@ -1,5 +1,5 @@
 .footer {
-  padding: 54px 0 22px;
+  padding: 58px 0 25px;
   background: #fff;
   color: var(--ink);
 }
@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr;
   align-items: start;
-  padding-bottom: 52px;
+  padding-bottom: 58px;
 }
 .footer-main > p {
   margin: 0;
@@ -18,7 +18,7 @@
 .footer-nav {
   display: flex;
   justify-content: flex-end;
-  gap: 21px;
+  gap: 25px;
   font-size: 10px;
 }
 .footer-nav a:hover {

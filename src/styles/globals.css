@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  --container-width: 1200px;
   --blue: #1358d5;
   --ink: #111827;
   --muted: #657083;
@@ -35,11 +36,11 @@ button {
   font: inherit;
 }
 .container {
-  width: min(1176px, calc(100% - 64px));
+  width: min(var(--container-width), calc(100% - 64px));
   margin: 0 auto;
 }
 .section {
-  padding: 112px 0;
+  padding: 104px 0;
 }
 .brand {
   display: inline-flex;
@@ -98,11 +99,11 @@ h2 em {
 }
 .button {
   display: inline-flex;
-  min-height: 45px;
+  min-height: 46px;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 0 18px;
+  padding: 0 19px;
   border: 1px solid var(--blue);
   font-size: 12px;
   font-weight: 650;
