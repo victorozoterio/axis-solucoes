@@ -137,16 +137,14 @@
 }
 .audience-bar {
   display: flex;
-  height: 72px;
+  height: 66px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 32px;
-  border-bottom: 1px solid var(--line);
-  background: #fff;
+  border-top: 1px solid #d9e0ea;
+  background: transparent;
   color: #253145;
   font-size: 12px;
-  box-shadow: 0 0 0 100vmax #fff;
-  clip-path: inset(0 -100vmax);
 }
 .audience-bar span {
   margin-right: auto;
@@ -185,6 +183,7 @@
     gap: 15px;
     overflow: hidden;
     font-size: 10px;
+    border-top-color: #d9e0ea;
   }
   .audience-bar span {
     display: none;
