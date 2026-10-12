@@ -71,14 +71,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="container audience-bar">
-        <span>PARA QUEM EMPREENDE</span>
-        <b>Serviços</b>
-        <i />
-        <b>Comércio</b>
-        <i />
-        <b>Indústria</b>
-      </div>
     </section>
   );
 }
