@@ -1,4 +1,7 @@
 import "./Footer.css";
+import { Mail } from "lucide-react";
+
+const CONTACT_EMAIL = "comercial@axissolucao.com";
 
 const links = [
   ["Serviços", "#servicos"],
@@ -17,11 +20,19 @@ export function Footer() {
             <small>SOLUÇÕES EMPRESARIAIS</small>
           </a>
         </div>
-        <p>
-          Orientação fiscal.
-          <br />
-          Mais clareza para o seu negócio.
-        </p>
+        <div className="footer-copy">
+          <p>
+            Orientação fiscal.
+            <br />
+            Mais clareza para o seu negócio.
+          </p>
+          {CONTACT_EMAIL && (
+            <a className="footer-email" href={`mailto:${CONTACT_EMAIL}`}>
+              <Mail size={14} aria-hidden="true" />
+              {CONTACT_EMAIL}
+            </a>
+          )}
+        </div>
         <nav className="footer-nav" aria-label="Links do rodapé">
           {links.map(([label, href]) => (
             <a key={href} href={href}>

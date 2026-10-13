@@ -9,11 +9,28 @@
   align-items: start;
   padding-bottom: 58px;
 }
-.footer-main > p {
+.footer-copy {
+  display: grid;
+  gap: 10px;
+}
+.footer-copy p {
   margin: 0;
   color: #778395;
   font-size: 11px;
   line-height: 1.55;
+}
+.footer-email {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 7px;
+  color: #778395;
+  font-size: 10px;
+  transition: color 0.2s ease;
+}
+.footer-email:hover {
+  color: var(--blue);
+  text-decoration: underline;
 }
 .footer-nav {
   display: flex;
